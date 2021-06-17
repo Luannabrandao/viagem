@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 400; 500 & display = swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #762A2e;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+header{
+    height: calc(100vh - 90px);
+    background: no-repeat center/cover url(./alasca4.jpg);
+    color:white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+header nav p{
+    font-weight: bold;
+    
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 15px
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+.pacotes {
+    background: rgb(216, 221, 238);
+    padding: 18px;
+}
+.pacotes .pacotes-title{
+    width:100%;
+    margin: 25px 0;
+    text-align: center;
+}
+.pacotes .pacotes-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0;
+    margin:25px;
+    margin-top: 50px;
+    position: relative;
+}
+.pacotes .card-content{
+    padding: 0 15px;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px ;
+}
+.pacotes .card-content ul li{
+    font-size:0.7rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .card-tag-top {
+    position: absolute;
+    right:0;
+    top:15px;
+    background: rgb(250, 186, 66);
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+
+}
+
+.pacotes .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top:170px;
+    background: rgb(60, 89, 143);
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.servicos{
+    padding:15px;
+    flex-wrap: wrap;
+}
+.servicos .servicos-title{
+    text-align: center;
+    margin:35px 0;
+}
+.servicos .servicos-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    
+}
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    
+}
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+.servicos .card svg:hover{
+    stroke: rgb(67, 239, 245);
+    transform: scale(1.1);
+
+}
+
+
+.servicos .card h3{
+    font-weight: bold;
+}
+.servicos .card p{
+    color:gray;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
+}
+.servicos .botao-servicos{
+    background-color: rgba(0, 0, 0, 0.582);
+    border:none;
+    color:rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+    
+.botao-servicos:hover{
+    background-color:rgb(67, 239, 245);
+    color:black;
+}
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+.contato{
+    padding: 60px;
+    background:rgb(160, 201, 201);
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+.contato .contato-card{
+    width: 350px;
+    height: 300px;
+    background: rgb(192, 255, 249);
+    position: absolute;
+    z-index: 99;
+    top:calc(50% - 150px);
+    left:calc(25% - 190px);
+    border-radius: 9px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36,28);
+}
+.contato .contato-card h1{
+    padding-left: 50px;
+    text-align: left;
+
+}
+
+.contato .contato-card li{
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(88, 87, 87);
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card li svg{
+    width:16px;
+    margin: 10px;
+
+}
+
+
+/* RESPONSIVIDADE */ 
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    
+
+}
+
+/* Landscae phones and down */
+@media (max-width: 480px) {
+    body{
+        margin-bottom: 55px;
+    }
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 99;
+        background: #1057b4;
+        color: white;
+        font-weight: bold;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p{
+        width: 100%;
+        text-align: center;
+    }
+    .header-content h1 {
+        margin-bottom: 1px;
+        font-size: 3rem;
+    }
+    header .header-content{
+        font-size:12px;
+        margin-bottom: 20px;
+    }
+    .contato{
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@media(max-width: 950px) {
+    .contato{
+        padding:60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
+    }
+
+}
+@media(max-width: 800px) {
+    .contato{
+        padding: 20px 0;
+    }
+
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+
+    }
+
+}
+
+
+
+@media(min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width:1200px) {
+
+}
